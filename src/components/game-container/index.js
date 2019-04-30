@@ -1,13 +1,22 @@
-import React from 'react';
+import React, {Component} from 'react';
+import GameImages from "../game-images";
+import people from "../../people";
 
-
-function GameContainer(props) {
-  return (
-    <div>
-    <h1>Game Container</h1>
-  
-    </div>
-  );
+class GameContainer extends Component {
+  render() {
+    return (
+      <div>
+        {people.map(person => (
+          <GameImages
+            key={person.id}
+            id={person.id}
+            image={person.image}
+            name={person.name}
+          />
+        ))}
+      </div>
+    );
+  }
 }
 
 
