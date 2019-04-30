@@ -22,7 +22,8 @@ class App extends Component {
   updateGame = id => {
     if (this.state.chosen.includes(id)) {
       this.setState({
-        score: 0
+        score: 0,
+        chosen: []
       });
     } else {
       let newScore = this.state.score + 1;
