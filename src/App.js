@@ -10,8 +10,13 @@ import './App.css';
 
 
 class App extends Component {
-  // game data
-  state = {
+  constructor(props) {
+    super(props);
+
+    // game data
+    this.state = {
+
+    }
   }
 
   render() {

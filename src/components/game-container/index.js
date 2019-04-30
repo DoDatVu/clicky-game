@@ -5,6 +5,13 @@ import people from "../../people";
 import './style.css';
 
 class GameContainer extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      people: people
+    }
+  }
 
   shuffle = (array) => {
     var currentIndex = array.length, temporaryValue, randomIndex;
@@ -25,13 +32,21 @@ class GameContainer extends Component {
     return array;
   }
 
+  selectPerson = id => {
+    this.setState({
+      people: this.shuffle(people)
+    });
+    
+    return id;
+  }
+
   render() {
-    const gameImages = this.shuffle(people);
 
     return (
       <div className="game-container">
-        {gameImages.map(person => (
+        {this.state.people.map(person => (
           <GameImages
+            selectPerson={this.selectPerson}
             key={person.id}
             id={person.id}
             image={person.image}
