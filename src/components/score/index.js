@@ -5,9 +5,16 @@ class Score extends Component {
     super(props);
 
     this.state = {
-      score: 0,
-      top_score: 0
     }
+  }
+
+  render() {
+    return (
+      <div className="score-counter">
+        <h2>Score: {this.props.score}</h2>
+        <h2>Top Score: {this.props.topScore}</h2>
+      </div>
+    );
   }
 }
 

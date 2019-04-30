@@ -37,7 +37,7 @@ class GameContainer extends Component {
       people: this.shuffle(people)
     });
     
-    return id;
+    this.props.updateGame(id);
   }
 
   render() {
