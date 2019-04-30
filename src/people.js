@@ -9,7 +9,7 @@ import kwonsooyoung from './assets/images/kwonsooyoung.jpg';
 import scoups from './assets/images/scoups.jpg';
 import terrycrews from './assets/images/terrycrews.jpg';
 import vernon from './assets/images/vernon.jpeg';
-import wonwoo from './assets/images/wonwoo.png';
+import wonwoo from './assets/images/wonwoo.jpg';
 import woozi from './assets/images/woozi.jpeg';
 import xuminghao from './assets/images/xuminghao.jpg';
 import yoonjeonghan from './assets/images/yoonjeonghan.jpg';

@@ -1,9 +1,13 @@
 import React, {Component} from 'react';
-// import terrycrews from "../../assets/images/terrycrews.jpg"
+import './style.css';
 
 function GameImages(props) {
   return (
-    <img className="game-image" src={props.image} alt={props.name}/>
+    <div className="card">
+      <div className="img-container">
+        <img className="game-image" src={props.image} alt={props.name}/>
+      </div>
+    </div>
   );
 }
 
